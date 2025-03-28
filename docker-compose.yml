@@ -1,0 +1,11 @@
+version: '3'
+services:
+  agent:
+    build:
+      context: .
+      dockerfile: Dockerfile.agent
+  rag_task:
+    build:
+      context: ./rag task
+      dockerfile: Dockerfile.rag
+    container_name: rag_task
